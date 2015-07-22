@@ -1,0 +1,21 @@
+<h3>How it works:</h3>
+This application lets you load a dataset, explore its main variables in a scatterchart and run a prediction using a file containing a new dataset.
+<br/><br/>
+Here is what you need to know to use the application.
+<br/><br/>
+<h4>Left Pane (Data Source) and Data Explorer</h4>
+The idea is that you use your own dataset to do your analysis, but you can also use Galton's and Wages datasets to do the testing. To load your own dataset you must:
+<li>Choose a CSV file. The names of the columns must be in the first line of the CSV file</li>
+<li>Click the "Load CSV" Button and check "Data Explorer" pane</li>
+<li>Review your loaded fileto check using the first 10 values and the column names</li>
+<br/><br/>
+<h4>"Exploratory Plot" Pane</h4>
+This pane lets you choose three variables over your dataset (check column names in the data explorer as the variables to use are case-sensitive). What you will see here is a scatter plot using 2 variables in the axes and a "Categories" variable to color the dots for better visualization.
+<br/><br/>
+<h4>"Model Builder" Pane</h4>
+As this is a simple modeler it only supports linear model. You must submit:
+<li>Target Variable: the name of the variable to predict.</li>
+<li>Predictors: using R formulas format. You can provide either a single variable or a formula.</li>
+<br/><br/>
+<h4>"Predictor" Pane</h4>
+This is where you pick a file with the registers containing at least the predictors used with the same column names (again, case-sensitive). The predicted value for each register is provided as a new column in a dataframe shown in the app.
